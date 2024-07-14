@@ -2,6 +2,7 @@ import itertools
 import time
 import paramiko
 import ftplib
+import os
 
 # Function to measure time taken
 def timer(func):
@@ -70,7 +71,7 @@ def brute_force_attack(target, username, chars, max_length, protocol):
 def main():
     target = "your_target_ip"
     username = "your_username"
-    password_file = "C:/Users/5H3PH3RD/Desktop/brute force password cracker/passwords.txt"
+    password_file = "C:/Users/5H3PH3RD/Desktop/brute force password cracker/passwords.txt"  # Absolute path
     chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
     max_length = 4
     protocol = "ssh"  # or "ftp"
